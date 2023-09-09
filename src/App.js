@@ -1,13 +1,22 @@
-import './app.css';
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { CurrencyConverter } from './views/currencyConverter/CurrencyConverter';
+import { ProjectsList } from "./views/projectsList/ProjectsList";
 
-function App() {
+export const App = () => {
   return (
-    <main className='main'>
-      <h1>Choose project</h1>
-      <div className='tile'>
-        <span className='tile__name'>Currency converter</span>
-      </div>
-    </main>
+    <HashRouter>
+      <Switch>
+        <Route path="/projects">
+          <ProjectsList />
+        </Route>
+        <Route path="/currency-converter">
+          <CurrencyConverter />
+        </Route>
+        <Route path="/">
+          <Redirect to="/projects" />
+        </Route>
+      </Switch>
+    </HashRouter>
   );
 }
 
