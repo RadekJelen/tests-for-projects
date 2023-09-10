@@ -11,3 +11,9 @@ body {
   background-color: #ECECEC;
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
