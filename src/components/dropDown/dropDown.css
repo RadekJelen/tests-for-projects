@@ -37,3 +37,19 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+.content__subheader {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content__subheader:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.content__image {
+  display: block;
+  max-width: 800px;
+  margin: 10px auto 0;
+}
