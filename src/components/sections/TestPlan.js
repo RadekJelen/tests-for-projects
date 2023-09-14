@@ -12,7 +12,7 @@ export const TestPlan = () => (
     </p>
     <p>
       {'Tested elements:'}
-      <ul class="section__list">
+      <ul className="section__list">
         <li>appearance based on the specification,</li>
         <li>functioning and validation of elements,</li>
         <li>event handling,</li>
@@ -21,7 +21,7 @@ export const TestPlan = () => (
     </p>
     <p>
       {'Non-testable elements:'}
-      <ul class="section__list">
+      <ul className="section__list">
         <li>Code and elements of the internal system infrastructure</li>
       </ul>
     </p>
@@ -29,7 +29,7 @@ export const TestPlan = () => (
     <p>Defined time: 3hrs., split into smaller sessions.</p>
     <p>
       {'Environment (most popular browser versions according to rankinkg.com on the day the tests started):'}
-      <ul class="section__list">
+      <ul className="section__list">
         <li>PC Chrome,</li>
         <li>PC FireFox,</li>
         <li>PC Opera,</li>
