@@ -4,5 +4,6 @@ export const CurrencyConverter = () => (
   <div className="container">
     <h1>Currency Converter</h1>
     <DropDown open name={'specification'} />
+    <DropDown name={'testPlan'} />
   </div>
 );

@@ -6,17 +6,12 @@
 
 .section__title {
   position: relative;
-  padding: 15px;
+  padding: 15px 20px;
   background: #F1F1F1;
   border-radius: 5px;
   font-weight: 700;
   list-style: none;
   cursor: pointer;
-}
-
-.section[open] .section__title {
-  border-bottom-left-radius: none;
-  border-bottom-right-radius: none;
 }
 
 .section__title::after {
@@ -32,7 +27,7 @@
 }
 
 .section__content {
-  padding: 15px;
+  padding: 15px 20px;
   background: #FFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -52,4 +47,9 @@
   display: block;
   max-width: 800px;
   margin: 10px auto 0;
+}
+
+.content__list {
+  margin-top: 0px;
+  padding-left: 25px;
 }

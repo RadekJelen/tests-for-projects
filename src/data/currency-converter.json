@@ -2,5 +2,23 @@
   "specification": {
     "title": "Specification",
     "content": "<span class=\"content__subheader\">Requirements for the Currency-Converter website<\/span><p>A simple currency calculator. The page will have 2 fields. In one the user will enter the amount (PLN) and in the other the user will select any foreign currency from a list. The rates in the calculator will be downloaded from the public API exchangeratesapi.io, the user will be informed when the downloaded rates are up to date. There will be a single 'Recalculate' button on the page. When pressed, the user will be shown the result of the multiplication - by currency. The calculator will have a simple and eye-catching design. The page will have a background photo. The page will show a loading window on start-up and handle errors, which it will inform the user about. The page will show the current time and date.<\/p><span>Project address: <a href=\"https://radekjelen.github.io/currency-converter-React/\">https://radekjelen.github.io/currency-converter-React/<\/a><\/span><span class=\"content__subheader\">Project visualisation<\/span><img class=\"content__image\" src=\"images/currencyConverter/pageScreen1.jpg\" alt=\"\"\/><img class=\"content__image\" src=\"images/currencyConverter/pageScreen2.jpg\" alt=\"\"\/>"
+  },
+  "testPlan": {
+    "title": "Test plan",
+    "content": "<span>ID: TP-CC<\/span><p>Introduction: A website that is a currency converter from PLN to any other currency.<\/p><p>The site is located at: <a href=\"https://radekjelen.github.io/currency-converter-React/\">https://radekjelen.github.io/currency-converter-React/<\/a>.<\/p><span>Tested elements:<\/span><ul class=\"content__list\"><li>appearance based on the specification,<\/li><li>functioning and validation of elements,<\/li><li>event handling,<\/li><li>functioning of the software interface.<\/li><\/ul><span>Non-testable elements:<\/span><ul class=\"content__list\"><li>Code and elements of the internal system infrastructure<\/li><\/ul><p>Testing approach: Exploratory, specification-based and software interface testing.<\/p><p>Defined time: 3hrs., split into smaller sessions.<\/p><span>Environment (most popular browser versions according to rankinkg.com on the day the tests started):<\/span><ul class=\"content__list\"><li>PC Chrome,<\/li><li>PC FireFox,<\/li><li>PC Opera,<\/li><li>PC Edge.<\/li><\/ul>",
+    "table": {
+      "caption": "Objectives of the test session",
+      "headers": ["Lp.", "Session objective", "Time allowed", "Comment"],
+      "rows": [
+        ["1", "Verify the appearance of the website", "10min.", "Simple compliance check"],
+        ["2", "Test the functionality of the website", "30min.", "The session may be extended if necessary"],
+        ["3", "Test validation of elements", "30min.", "Session may be extended if necessary"],
+        ["4", "Verify the operation of the clock and date on the page", "10min.", "Simple compliance check"],
+        ["5", "Investigate occurrence of events", "10min.", ""],
+        ["6", "Verify operation of APIs in the system", "30min.", ""],
+        ["7", "Verification on different types of browsers", "50min.", "Session may be extended if necessary"]
+      ]
+    },
+    "additionalInfo": "Additional time prepared for defect reporting and final report preparation."
   }
 }
