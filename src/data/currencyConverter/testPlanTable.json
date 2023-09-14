@@ -1,0 +1,13 @@
+{
+  "caption": "Objectives of the test session",
+  "headers": ["Lp.", "Session objective", "Time allowed", "Comment"],
+  "rows": [
+    ["1", "Verify the appearance of the website", "10min.", "Simple compliance check"],
+    ["2", "Test the functionality of the website", "30min.", "The session may be extended if necessary"],
+    ["3", "Test validation of elements", "30min.", "Session may be extended if necessary"],
+    ["4", "Verify the operation of the clock and date on the page", "10min.", "Simple compliance check"],
+    ["5", "Investigate occurrence of events", "10min.", ""],
+    ["6", "Verify operation of APIs in the system", "30min.", ""],
+    ["7", "Verification on different types of browsers", "50min.", "Session may be extended if necessary"]
+  ]
+}

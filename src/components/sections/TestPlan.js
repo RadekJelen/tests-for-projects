@@ -1,4 +1,5 @@
-import { Table } from "./table/Table";
+import { Table } from './table/Table';
+import tableData from '../../data/currencyConverter/testPlanTable.json';
 
 export const TestPlan = () => (
   <>
@@ -30,7 +31,7 @@ export const TestPlan = () => (
       <li>PC Opera,</li>
       <li>PC Edge.</li>
     </ul>
-    <Table name={'testPlan'} />
+    <Table data={tableData} />
     <p>Additional time prepared for defect reporting and final report preparation.</p>
   </>
 );
