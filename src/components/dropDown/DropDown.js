@@ -1,29 +1,13 @@
 import './dropDown.css';
-import data from '../../data/currency-converter.json';
-import { SectionTable } from '../sectionTable/SectionTable';
+import '../sections/section.css';
 
-export const DropDown = ({ open, name }) => {
-  const sectionData = data[name];
-
-  return (
-    sectionData
-      ? (
-        <details className="section" open={open}>
-          <summary className="section__title-container">
-            <h2 className="section__title">{sectionData.title}</h2>
-          </summary>
-          <div className='section__content'>
-            <div dangerouslySetInnerHTML={{ __html: sectionData.content }} />
-            {sectionData.table
-              ? <SectionTable data={sectionData.table} />
-              : null
-            }
-            {sectionData.additionalInfo
-              ? <p>{sectionData.additionalInfo}</p>
-              : null
-            }
-          </div>
-        </details>
-      ) : null
-  );
-};
+export const DropDown = ({ open, name, children }) => (
+  <details className="drop-down" open={open}>
+    <summary className="drop-down__title-container">
+      <h2 className="drop-down__title">{name}</h2>
+    </summary>
+    <div className='drop-down__content'>
+      {children}
+    </div>
+  </details>
+);

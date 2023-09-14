@@ -1,10 +1,10 @@
-.section {
+.drop-down {
   margin: 20px 0;
   box-shadow: 2px 2px 7px #BEBEBE;
   border-radius: 5px;
 }
 
-.section__title-container {
+.drop-down__title-container {
   position: relative;
   padding: 15px 20px;
   background: #F1F1F1;
@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.section__title-container::after {
+.drop-down__title-container::after {
   content: url('../../icons/arrow.svg');
   position: absolute;
   top: 15px;
@@ -21,39 +21,18 @@
   transition: all .2s linear;
 }
 
-.section[open] .section__title-container::after {
+.drop-down[open] .drop-down__title-container::after {
   transform: rotateX(180deg);
 }
 
-.section__title {
+.drop-down__title {
   margin: 0;
   font-size: 20px;
 }
 
-.section__content {
+.drop-down__content {
   padding: 15px 20px;
   background: #FFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-.content__subheader {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.content__subheader:not(:first-of-type) {
-  margin-top: 20px;
-}
-
-.content__image {
-  display: block;
-  max-width: 800px;
-  margin: 10px auto 0;
-}
-
-.content__list {
-  margin-top: 0px;
-  padding-left: 25px;
 }
