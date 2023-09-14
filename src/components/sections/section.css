@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+.section__paragraph {
+  margin-top: 0;
+}
+
 .section__image {
   display: block;
   max-width: 800px;
@@ -17,4 +21,8 @@
 .section__list {
   margin-top: 0px;
   padding-left: 25px;
+}
+
+.section__bold {
+  font-weight: 700;
 }
