@@ -9,7 +9,9 @@ export const DropDown = ({ open, name }) => {
     sectionData
       ? (
         <details className="section" open={open}>
-          <summary className="section__title">{sectionData.title}</summary>
+          <summary className="section__title-container">
+            <h2 className="section__title">{sectionData.title}</h2>
+          </summary>
           <div className='section__content'>
             <div dangerouslySetInnerHTML={{ __html: sectionData.content }} />
             {sectionData.table
