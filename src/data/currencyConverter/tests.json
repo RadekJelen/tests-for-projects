@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Functional tests",
+    "type": "functional",
+    "categories": [
+      {
+        "id": "1-1",
+        "name": "data and time",
+        "tests": [
+          {
+            "id": "ts-cc-01",
+            "name": "Test Case cc-01 Verification of date operation",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "verify the action of the date", "day of the week corresponds to the current day", "Success", "Passed"],
+              ["3", "verify the action of the date", "number of the day of the month shall correspond to the current day", "Success", "Passed"],
+              ["4", "verify the action of the date", "month is consistent with the current month.", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          },
+          {
+            "id": "ts-cc-02",
+            "name": "Test Case cc-02 - Verification of clock operation",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "verify the action of the clock", "time is displayed in the correct format", "Success", "Passed"],
+              ["2", "verify the action of the clock", "is displayed according to the current time", "Success", "Passed"],
+              ["2", "verify the action of the clock", "update time after 1 second", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          },
+          {
+            "id": "ts-cc-03",
+            "name": "Test Case cc-03 - Verification of date course updates",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "verify the action of the element", "date is agreement with current rates (link in the description)", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          }
+        ]
+      },
+      {
+        "id": "1-2",
+        "name": "value field",
+        "tests": [
+          {
+            "id": "ts-cc-04",
+            "name": "Test Case cc-04 - Verification of value field validation",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "verify the action of the element", "is immediately set as a target", "Success", "Passed"],
+              ["3", "verify the action of the element", "accepts only numbers", "gives the option to enter \"e\"", "Failed"],
+              ["4", "verify the action of the element", "accepts only positive values", "Success", "Passed"],
+              ["5", "verify the action of the element", "takes decimal values", "Success", "Passed"],
+              ["6", "verify the action of the element", "does not accept spaces", "Success", "Passed"]
+            ],
+            "importance": "High",
+            "duration": "3.00"
+          }
+        ]
+      },
+      {
+        "id": "1-3",
+        "name": "selection list",
+        "tests": [
+          {
+            "id": "ts-cc-05",
+            "name": "Test Case cc-05 - Verification of selection list validation",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "click on the element", "the element reacts correctly (I show a selection list)", "Success", "Passed"],
+              ["3", "click on the list item", "the item is selected", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          }
+        ]
+      },
+      {
+        "id": "1-4",
+        "name": "button",
+        "tests": [
+          {
+            "id": "ts-cc-06",
+            "name": "Test Case cc-06 - Verification of button operation - no value",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "click the button \"Przelicz!\"", "the system will not perform the action", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          },
+          {
+            "id": "ts-cc-07",
+            "name": "Test Case cc-07 - Verification of button operation",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "enter the value in the \"Mam*:\" field", "the field is completed", "Success", "Passed"],
+              ["3", "click the button \"Przelicz!\"", "the system will not perform the action", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          },
+          {
+            "id": "ts-cc-08",
+            "name": "Test Case cc-08 -Verification of button operation - change of currency",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["2", "enter the value in the \"Mam*:\" field", "the field is completed", "Success", "Passed"],
+              ["3", "click on the \"Waluty:\" element", "select and approve any item", "Success", "Passed"],
+              ["4", "click the button \"Przelicz!\"", "the system displays the result", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          }
+        ]
+      },
+      {
+        "id": "1-5",
+        "name": "result field",
+        "tests": [
+          {
+            "id": "ts-cc-09",
+            "name": "Test Case cc-09 - Verification operation of the result field",
+            "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
+              ["2", "enters the value in the field \"Mam*:\"", "the field is completed", "Success", "Passed"],
+              ["3", "click on the \"Waluty:\" element", "select and approve any item", "Success", "Passed"],
+              ["4", "click the button \"Przelicz!\"", "the system displays the result", "Success", "Passed"],
+              ["5", "verify the action of the element", "the element is correctly displayed on the page", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          }
+        ]
+      }
+    ]
+  }
+]

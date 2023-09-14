@@ -21,7 +21,7 @@
   transition: all .2s linear;
 }
 
-.drop-down[open] .drop-down__title-container::after {
+.drop-down[open] > .drop-down__title-container::after {
   transform: rotateX(180deg);
 }
 

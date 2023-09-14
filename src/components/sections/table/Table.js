@@ -3,7 +3,9 @@ import { nanoid } from 'nanoid';
 
 export const Table = ({ data }) => (
   <table className='table'>
-    <caption className="table__caption">{data.caption}</caption>
+    {data.caption && (
+      <caption className="table__caption">{data.caption}</caption>
+    )}
     <thead>
       <tr className='table__header'>
         {data.headers.map(header => (
