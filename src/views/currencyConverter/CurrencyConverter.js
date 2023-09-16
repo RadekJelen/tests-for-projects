@@ -7,7 +7,7 @@ import { Tests } from "../../components/sections/tests/Tests";
 export const CurrencyConverter = () => (
   <div className="container">
     <h1>Currency Converter</h1>
-    <DropDown open name={'Specification'} nestingLevel={1}>
+    <DropDown name={'Specification'} nestingLevel={1}>
       <Specification />
     </DropDown>
     <DropDown name={'Test Plan'} nestingLevel={1}>
