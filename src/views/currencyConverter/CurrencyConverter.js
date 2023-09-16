@@ -4,6 +4,7 @@ import { Specification } from "../../components/sections/Specification";
 import { TestPlan } from "../../components/sections/TestPlan";
 import { TestReport } from "../../components/sections/TestReport";
 import { Tests } from "../../components/sections/tests/Tests";
+import { ArrowUp } from "../../components/arrowUp/ArrowUp";
 
 export const CurrencyConverter = () => (
   <div className="container">
@@ -21,5 +22,6 @@ export const CurrencyConverter = () => (
     <DropDown name={'Test Report'} nestingLevel={1}>
       <TestReport />
     </DropDown>
+    <ArrowUp />
   </div>
 );

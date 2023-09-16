@@ -22,7 +22,7 @@
 }
 
 .drop-down[open] > .drop-down__title-container::after {
-  transform: rotateX(180deg);
+  transform: rotate(90deg);
 }
 
 .drop-down__title {
