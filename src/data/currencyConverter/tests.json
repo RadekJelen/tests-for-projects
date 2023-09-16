@@ -158,5 +158,98 @@
         ]
       }
     ]
+  },
+  {
+  "id": 2,
+    "name": "Integrity tests",
+    "type": "integrity",
+    "categories": [
+      {
+        "id": "2-1",
+        "name": "API",
+        "tests": [
+          {
+            "id": "ts-cc-10",
+            "name": "Test Case cc-10 - Verification calculation of the result field",
+            "summary": "Test the operation and check that the result of the operation is correct and displayed correctly. According to the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
+              ["2", "enters the value in the field \"Mam*:\"", "the field is completed", "Success", "Passed"],
+              ["3", "click on the \"Waluty:\" element", "select and approve any item", "Success", "Passed"],
+              ["4", "click the button \"Przelicz!\"", "the system displays the result", "Success", "Passed"],
+              ["5", "verify the action of the element", "the element is correctly displayed on the page", "Success", "Passed"],
+              ["6", "verify the action of the element", "the result is in agreement with the current rate (link in the description)", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "10.00"
+          },
+          {
+            "id": "ts-cc-11",
+            "name": "Test Case cc-11 - Examining the status of responses",
+            "summary": "Check the response status of the API module responsible for the valet exchange rate",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "module returns status 200", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          },
+          {
+            "id": "ts-cc-12",
+            "name": "Test Case cc-12 - Examining the possibilities of working offline",
+            "summary": "Check the possibility of working without an Internet connection",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "page is displayed correctly", "Success", "Passed"],
+              ["2", "goes into offlime mode", "the website is functioning properly", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          },
+          {
+            "id": "ts-cc-13",
+            "name": "Test Case cc-13 - Checking download times",
+            "summary": "Check of API download time.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "download time is less than 5ms.", "time did not exceed 3ms", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "5.00"
+          }
+        ]
+      },
+      {
+        "id": "2-2",
+        "name": "events",
+        "tests": [
+          {
+            "id": "ts-cc-14",
+            "name": "Test Case cc-14 - Verification of the loading event",
+            "summary": "Test the operation of the loading event. According to the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "the event is taking place", "Success", "Passed"],
+              ["2", "refresh the page", "the event is taking place", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          },
+          {
+            "id": "ts-cc-15",
+            "name": "Test Case cc-15 - Verification of the error event",
+            "summary": "Test the operation of the error event . According to the specifications and models provided.",
+            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "tableRows" : [
+              ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
+              ["2", "generate an error event", "the event is taking place", "Success", "Passed"]
+            ],
+            "importance": "Medium",
+            "duration": "3.00"
+          }
+        ]
+      }
+    ]
   }
 ]
