@@ -9,21 +9,35 @@ export const Tests = () => {
   const [testsType, setTestsType] = useState('');
   const [visibleTests, setVisibleTests] = useState('');
 
-  const onTypeButtonClick = (type) => setTestsType(type);
+  const onTypeButtonClick = (type) => {
+    setTestsType(type);
+    setVisibleTests('');
+  };
 
   const onCategoryButtonClick = (category) => setVisibleTests(category);
 
   return (
     <>
-      {data.map(button => (
-        <button key={button.id} className="button" onClick={() => onTypeButtonClick(button.type)}>
-          {button.name}
-        </button>
-      ))}
       <div className="wrapper">
+        {data.map(button => (
+          <button
+          key={button.id}
+          className="button"
+          data-is-active={button.type === testsType}
+          onClick={() => onTypeButtonClick(button.type)}
+          >
+            {button.name}
+          </button>
+        ))}
+      </div>
+      <div className="wrapper wrapper--with-margin">
         {testsType && data.find(button => button.type === testsType).categories.map(category => (
           <React.Fragment key={category.id}>
-            <button className="button" onClick={() => onCategoryButtonClick(category.name)}>
+            <button
+            className="button"
+            data-is-active={category.name === visibleTests}
+            onClick={() => onCategoryButtonClick(category.name)}
+            >
               {category.name}
             </button>
             {category.name === visibleTests && (
