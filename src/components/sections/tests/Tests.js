@@ -8,6 +8,7 @@ import { TestCase } from './TestCase';
 export const Tests = () => {
   const [testsType, setTestsType] = useState('');
   const [visibleTests, setVisibleTests] = useState('');
+  const buttonCategories = data.find(button => button.type === testsType)?.categories;
 
   const onTypeButtonClick = (type) => {
     setTestsType(type);
@@ -21,26 +22,30 @@ export const Tests = () => {
       <div className="wrapper">
         {data.map(button => (
           <button
-          key={button.id}
-          className="button"
-          data-is-active={button.type === testsType}
-          onClick={() => onTypeButtonClick(button.type)}
+            key={button.id}
+            className="button"
+            data-is-active={button.type === testsType}
+            onClick={() => onTypeButtonClick(button.type)}
           >
             {button.name}
           </button>
         ))}
       </div>
       <div className="wrapper wrapper--with-margin">
-        {testsType && data.find(button => button.type === testsType).categories.map(category => (
+        {testsType && buttonCategories.map(category => (
           <React.Fragment key={category.id}>
-            <button
-            className="button"
-            data-is-active={category.name === visibleTests}
-            onClick={() => onCategoryButtonClick(category.name)}
-            >
-              {category.name}
-            </button>
-            {category.name === visibleTests && (
+            {buttonCategories.length > 1
+              ? (
+                <button
+                  className="button"
+                  data-is-active={category.name === visibleTests}
+                  onClick={() => onCategoryButtonClick(category.name)}
+                >
+                  {category.name}
+                </button>
+              ) : null
+            }
+            {(buttonCategories.length === 1 || category.name === visibleTests) && (
               <div className='tests'>
                 {category.tests.map(test => (
                   <DropDown key={test.id} name={test.name} nestingLevel={2}>
