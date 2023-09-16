@@ -1,3 +1,4 @@
+import { GoBackLink } from "../../components/goBackLink/GoBackLink";
 import { DropDown } from "../../components/dropDown/DropDown";
 import { Specification } from "../../components/sections/Specification";
 import { TestPlan } from "../../components/sections/TestPlan";
@@ -6,6 +7,7 @@ import { Tests } from "../../components/sections/tests/Tests";
 
 export const CurrencyConverter = () => (
   <div className="container">
+    <GoBackLink />
     <h1>Currency Converter</h1>
     <DropDown name={'Specification'} nestingLevel={1}>
       <Specification />

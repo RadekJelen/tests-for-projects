@@ -1,0 +1,10 @@
+.go-back {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.go-back__icon {
+  height: auto;
+  width: 13px;
+}
