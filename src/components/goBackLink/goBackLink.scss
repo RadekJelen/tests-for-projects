@@ -1,10 +1,40 @@
+@import '../../variables.scss';
+
+@keyframes moveArrowBack {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .go-back {
+  width: fit-content;
   display: flex;
   align-items: center;
-  column-gap: 7px;
+  column-gap: 5px;
+  text-decoration: none;
 
   &__icon {
     height: auto;
     width: 13px;
+    fill: $grey;
+  }
+
+  &__link {
+    color: $grey;
+    font-size: 18px;
+  }
+
+  &:hover .go-back__icon {
+    animation-name: moveArrowBack;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
   }
 }
