@@ -5,7 +5,9 @@
 }
 
 .drop-down__title-container {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   background: #F1F1F1;
   border-radius: 5px;
@@ -13,15 +15,12 @@
   cursor: pointer;
 }
 
-.drop-down__title-container::after {
-  content: url('../../icons/arrow.svg');
-  position: absolute;
-  top: 15px;
-  right: 15px;
+.drop-down__title-icon {
+  flex-shrink: 0;
   transition: all .2s linear;
 }
 
-.drop-down[open] > .drop-down__title-container::after {
+.drop-down[open] > .drop-down__title-container .drop-down__title-icon {
   transform: rotate(90deg);
 }
 
