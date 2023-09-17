@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .main {
   height: 100vh;
   display: flex;
@@ -7,7 +9,7 @@
   row-gap: 10px;
 
   &__header {
-    color: #CCD3DB;
+    color: $grey;
   }
 }
 
@@ -20,9 +22,9 @@
   justify-content: center;
   align-items: center;
   row-gap: 15px;
-  background: #FFF;
+  background: $white;
   border-radius: 25px;
-  border: 7px solid #CCD3DB;
+  border: 7px solid $grey;
   text-decoration: none;
 
   &:hover {
@@ -36,17 +38,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #CCD3DB;
+  background-color: $grey;
   border-radius: 50%;
 }
 
 .tile__icon {
   width: 50px;
-  fill: #555C66;
+  fill: $darkGrey;
 }
 
 .tile__name {
   font-size: 20px;
-  color: #555C66;
+  color: $darkGrey;
   text-transform: capitalize;
 }

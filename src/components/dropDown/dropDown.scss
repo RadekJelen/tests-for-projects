@@ -1,6 +1,8 @@
+@import '../../variables.scss';
+
 .drop-down {
   margin: 20px 0;
-  box-shadow: 2px 2px 7px #BEBEBE;
+  box-shadow: 2px 2px 7px $silver;
   border-radius: 5px;
 
   &__title-container {
@@ -8,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #F1F1F1;
+    background: $seashell;
     border-radius: 5px;
     list-style: none;
     cursor: pointer;
@@ -30,7 +32,7 @@
 
   &__content {
     padding: 15px 20px;
-    background: #FFF;
+    background: $white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }

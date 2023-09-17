@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 html {
   box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ html {
 
 body {
   word-break: break-word;
-  background-color: #292d33;
+  background-color: $gunmetal;
   font-family: 'Roboto', sans-serif;
   line-height: 1.7;
 }
