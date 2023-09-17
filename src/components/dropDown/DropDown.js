@@ -1,5 +1,5 @@
-import './dropDown.css';
-import '../sections/section.css';
+import './dropDown.scss';
+import '../sections/section.scss';
 import { useRef } from 'react';
 import { ReactComponent as Arrow } from '../../icons/arrow.svg';
 

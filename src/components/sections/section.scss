@@ -2,10 +2,10 @@
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-}
 
-.section__subheader:not(:first-of-type) {
-  margin-top: 20px;
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
 }
 
 .section__paragraph {

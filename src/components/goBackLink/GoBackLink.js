@@ -1,4 +1,4 @@
-import './goBackLink.css';
+import './goBackLink.scss';
 import { Link } from "react-router-dom";
 import { ReactComponent as Arrow } from '../../icons/arrowLeft.svg';
 

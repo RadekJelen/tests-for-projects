@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: center;
   row-gap: 10px;
-}
 
-.main__header {
-  color: #CCD3DB;
+  &__header {
+    color: #CCD3DB;
+  }
 }
 
 .tile {
@@ -24,10 +24,10 @@
   border-radius: 25px;
   border: 7px solid #CCD3DB;
   text-decoration: none;
-}
 
-.tile:hover {
-  transform: scale(0.99);
+  &:hover {
+    transform: scale(0.99);
+  }
 }
 
 .tile__icon-wrapper {

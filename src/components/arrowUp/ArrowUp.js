@@ -1,4 +1,4 @@
-import './arrowUp.css';
+import './arrowUp.scss';
 import { useEffect, useState } from 'react';
 import { ReactComponent as Arrow } from '../../icons/arrow.svg';
 

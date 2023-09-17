@@ -1,4 +1,4 @@
-import './projectsList.css';
+import './projectsList.scss';
 import { Link } from "react-router-dom";
 import { ReactComponent as Icon } from '../../icons/coins.svg';
 

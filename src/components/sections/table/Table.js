@@ -1,4 +1,4 @@
-import './table.css';
+import './table.scss';
 import { nanoid } from 'nanoid';
 
 export const Table = ({ data }) => (

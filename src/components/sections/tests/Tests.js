@@ -1,5 +1,5 @@
 import React from 'react';
-import './tests.css';
+import './tests.scss';
 import data from '../../../data/currencyConverter/tests.json';
 import { useState } from 'react';
 import { DropDown } from '../../dropDown/DropDown';
