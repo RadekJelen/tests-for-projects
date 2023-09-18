@@ -2,47 +2,59 @@
 
 .drop-down {
   margin: 20px 0;
-  box-shadow: 2px 2px 7px $silver;
-  border-radius: 5px;
+  border-radius: 20px;
+  border: 8px solid $seashell;
+  color: $gunmetal;
+  box-shadow: 4px 4px 7px 0px $almostBlack;
 
-  &__title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: $seashell;
-    border-radius: 5px;
-    list-style: none;
-    cursor: pointer;
+  &[data-is-nested="true"] {
+    box-shadow: 1px 3px 3px $grey;
   }
 
-  &__title-icon {
-    flex-shrink: 0;
-    transition: all .2s linear;
-  }
+  &[open] > .drop-down__title-container {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
-  &[open] > .drop-down__title-container .drop-down__title-icon {
-    transform: rotate(90deg);
+    .drop-down__title-icon {
+      transform: rotate(90deg);
+    }
   }
+}
 
-  &__title {
-    margin: 0;
-    font-size: 20px;
-  }
+.drop-down__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: $seashell;
+  border-radius: 10px;
+  list-style: none;
+  cursor: pointer;
+}
 
-  &__content {
-    padding: 15px 20px;
-    background: $white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+.drop-down__title-icon {
+  flex-shrink: 0;
+  transition: all .2s linear;
+}
 
-  &__collapse-button {
-    margin: 20px 0 0 auto;
-    display: block;
-    border: none;
-    background: transparent;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+.drop-down__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.drop-down__content {
+  padding: 15px 10px;
+  background: $white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.drop-down__collapse-button {
+  margin: 20px 0 0 auto;
+  display: block;
+  border: none;
+  background: transparent;
+  color: $gunmetal;
+  text-decoration: underline;
+  cursor: pointer;
 }

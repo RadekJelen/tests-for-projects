@@ -11,7 +11,11 @@ export const DropDown = ({ name, nestingLevel, children }) => {
   };
 
   return (
-    <details className="drop-down" ref={detailsRef}>
+    <details
+      className="drop-down"
+      data-is-nested={nestingLevel === 2}
+      ref={detailsRef}
+    >
       <summary className="drop-down__title-container">
         {nestingLevel === 1 && (<h2 className="drop-down__title">{name}</h2>)}
         {nestingLevel === 2 && (<h3 className="drop-down__title">{name}</h3>)}

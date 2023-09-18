@@ -9,7 +9,7 @@ import { ArrowUp } from "../../components/arrowUp/ArrowUp";
 export const CurrencyConverter = () => (
   <div className="container">
     <GoBackLink />
-    <h1>Currency Converter</h1>
+    <h1 className="title">Currency Converter</h1>
     <DropDown name={'Specification'} nestingLevel={1}>
       <Specification />
     </DropDown>

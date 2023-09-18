@@ -9,7 +9,7 @@
   row-gap: 10px;
 
   &__header {
-    color: $lightGrey;
+    color: $seashell;
   }
 }
 
@@ -24,7 +24,7 @@
   row-gap: 15px;
   background: $white;
   border-radius: 25px;
-  border: 7px solid $lightGrey;
+  border: 7px solid $lightSilver;
   text-decoration: none;
 
   &:hover {
@@ -38,17 +38,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $lightGrey;
+  background-color: $lightSilver;
   border-radius: 50%;
 }
 
 .tile__icon {
   width: 50px;
-  fill: $darkGrey;
+  fill: $darkSilver;
 }
 
 .tile__name {
   font-size: 20px;
-  color: $darkGrey;
+  color: $darkSilver;
   text-transform: capitalize;
 }
