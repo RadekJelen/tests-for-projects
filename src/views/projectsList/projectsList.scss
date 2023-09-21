@@ -11,6 +11,11 @@
   &__header {
     color: $seashell;
   }
+
+  &__tile-container {
+    display: flex;
+    column-gap: 10px;
+  }
 }
 
 .tile {
@@ -43,7 +48,7 @@
 }
 
 .tile__icon {
-  width: 50px;
+  height: 40px;
   fill: $darkSilver;
 }
 
@@ -51,4 +56,12 @@
   font-size: 20px;
   color: $darkSilver;
   text-transform: capitalize;
+}
+
+.tile--work {
+  cursor: not-allowed;
+
+  .tile__name {
+    text-transform: lowercase;
+  }
 }
