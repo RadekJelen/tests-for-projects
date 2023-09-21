@@ -12,7 +12,7 @@
             "id": "ts-cc-01",
             "name": "Test Case cc-01 Verification of date operation",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "verify the action of the date", "day of the week corresponds to the current day", "Success", "Passed"],
@@ -26,7 +26,7 @@
             "id": "ts-cc-02",
             "name": "Test Case cc-02 - Verification of clock operation",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "verify the action of the clock", "time is displayed in the correct format", "Success", "Passed"],
@@ -40,7 +40,7 @@
             "id": "ts-cc-03",
             "name": "Test Case cc-03 - Verification of date course updates",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "preconditions": "withApiLinks",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "verify the action of the element", "date is agreement with current rates (link in the description)", "Success", "Passed"]
@@ -58,7 +58,7 @@
             "id": "ts-cc-04",
             "name": "Test Case cc-04 - Verification of value field validation",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "preconditions": "withApiLinks",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "verify the action of the element", "is immediately set as a target", "Success", "Passed"],
@@ -80,7 +80,7 @@
             "id": "ts-cc-05",
             "name": "Test Case cc-05 - Verification of selection list validation",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "preconditions": "withApiLinks",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "click on the element", "the element reacts correctly (I show a selection list)", "Success", "Passed"],
@@ -99,7 +99,7 @@
             "id": "ts-cc-06",
             "name": "Test Case cc-06 - Verification of button operation - no value",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "click the button \"Przelicz!\"", "the system will not perform the action", "Success", "Passed"]
@@ -111,7 +111,7 @@
             "id": "ts-cc-07",
             "name": "Test Case cc-07 - Verification of button operation",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "enter the value in the \"Mam*:\" field", "the field is completed", "Success", "Passed"],
@@ -124,7 +124,7 @@
             "id": "ts-cc-08",
             "name": "Test Case cc-08 -Verification of button operation - change of currency",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the element is correctly displayed on the page", "Success", "Passed"],
               ["2", "enter the value in the \"Mam*:\" field", "the field is completed", "Success", "Passed"],
@@ -144,7 +144,7 @@
             "id": "ts-cc-09",
             "name": "Test Case cc-09 - Verification operation of the result field",
             "summary": "Test operation and verify correct display of button element. In accordance with the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "preconditions": "withApiLinks",
             "tableRows" : [
               ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
               ["2", "enters the value in the field \"Mam*:\"", "the field is completed", "Success", "Passed"],
@@ -172,7 +172,7 @@
             "id": "ts-cc-10",
             "name": "Test Case cc-10 - Verification calculation of the result field",
             "summary": "Test the operation and check that the result of the operation is correct and displayed correctly. According to the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. Data for checking results https://api.exchangerate.host/latest?base=PLN. Api website https://exchangerate.host/#/",
+            "preconditions": "withApiLinks",
             "tableRows" : [
               ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
               ["2", "enters the value in the field \"Mam*:\"", "the field is completed", "Success", "Passed"],
@@ -188,7 +188,7 @@
             "id": "ts-cc-11",
             "name": "Test Case cc-11 - Examining the status of responses",
             "summary": "Check the response status of the API module responsible for the valet exchange rate",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "module returns status 200", "Success", "Passed"]
             ],
@@ -199,7 +199,7 @@
             "id": "ts-cc-12",
             "name": "Test Case cc-12 - Examining the possibilities of working offline",
             "summary": "Check the possibility of working without an Internet connection",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "page is displayed correctly", "Success", "Passed"],
               ["2", "goes into offlime mode", "the website is functioning properly", "Success", "Passed"]
@@ -211,7 +211,7 @@
             "id": "ts-cc-13",
             "name": "Test Case cc-13 - Checking download times",
             "summary": "Check of API download time.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "download time is less than 5ms.", "time did not exceed 3ms", "Passed"]
             ],
@@ -228,7 +228,7 @@
             "id": "ts-cc-14",
             "name": "Test Case cc-14 - Verification of the loading event",
             "summary": "Test the operation of the loading event. According to the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "the event is taking place", "Success", "Passed"],
               ["2", "refresh the page", "the event is taking place", "Success", "Passed"]
@@ -240,7 +240,7 @@
             "id": "ts-cc-15",
             "name": "Test Case cc-15 - Verification of the error event",
             "summary": "Test the operation of the error event . According to the specifications and models provided.",
-            "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/",
+            "preconditions": "basics",
             "tableRows" : [
               ["1", "go to page (link in description)", "page displays correctly", "Success", "Passed"],
               ["2", "generate an error event", "the event is taking place", "Success", "Passed"]
@@ -265,7 +265,7 @@
               "id": "ts-cc-16",
               "name": "Test Case cc-16 -Verification of functionality on different types of browsers",
               "summary": "Test the functioning of the website on all browsers mentioned earlier.",
-              "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. The browsers taking part in the tests are: Chrome, FireFox, Opera, MS Edge (in the latest versions).",
+              "preconditions": "withBrowsers",
               "tableRows" : [
                 ["1", "go to page (link in description) in Chrome browser", "the website is working properly", "Success", "Passed"],
                 ["2", "go to page (link in description) in FireFox browser", "the website is working properly", "Success", "Passed"],
@@ -279,7 +279,7 @@
               "id": "ts-cc-17",
               "name": "Test Case cc-17 - Verification of the presentation on different types of browsers",
               "summary": "Test the presentation of the website on all browsers mentioned earlier.",
-              "preconditions": "The page must be opened in any browser https://radekjelen.github.io/currency-converter-React/. The browsers taking part in the tests are: Chrome, FireFox, Opera, MS Edge (in the latest versions).",
+              "preconditions": "withBrowsers",
               "tableRows" : [
                 ["1", "go to page (link in description) in Chrome browser", "the website presents correctly", "Success", "Passed"],
                 ["2", "go to page (link in description) in FireFox browser", "the website presents correctly", "incorrect frame animation", "Faild"],
