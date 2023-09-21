@@ -1,13 +1,13 @@
 import { Table } from './table/Table';
 import tableData from '../../data/currencyConverter/testPlanTable.json';
-import { CC_PAGE_LINK } from '../../consts';
+import { CC_PROJECT_LINK } from '../../consts';
 
 export const TestPlan = () => (
   <>
     <span>ID: TP-CC</span>
     <p>Introduction: A website that is a currency converter from PLN to any other currency.</p>
     <p>
-      The site is located at: <a href={CC_PAGE_LINK} target='_blank'>{CC_PAGE_LINK}</a>
+      The site is located at: <a href={CC_PROJECT_LINK} target='_blank'>{CC_PROJECT_LINK}</a>
     </p>
     <span>Tested elements:</span>
     <ul className="section__list">

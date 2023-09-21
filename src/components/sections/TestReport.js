@@ -1,4 +1,4 @@
-import { CC_PAGE_LINK } from "../../consts";
+import { CC_PROJECT_LINK } from "../../consts";
 
 export const TestReport = () => (
   <>
@@ -13,7 +13,7 @@ export const TestReport = () => (
 
     <h3 className="section__subheader">Subject of tests</h3>
     <p className="section__paragraph">
-      Version available on GitHub (<a href={CC_PAGE_LINK} target='_blank'>{CC_PAGE_LINK}</a>)
+      Version available on GitHub (<a href={CC_PROJECT_LINK} target='_blank'>{CC_PROJECT_LINK}</a>)
     </p>
 
     <h3 className="section__subheader">Object features to not be tested</h3>

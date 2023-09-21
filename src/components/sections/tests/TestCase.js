@@ -1,5 +1,5 @@
 import { Table } from "../table/Table";
-import { CC_PAGE_LINK, CC_API_RESULLTS, CC_API_LINK } from "../../../consts";
+import { CC_PROJECT_LINK, CC_API_RESULLTS, CC_API_LINK } from "../../../consts";
 
 export const TestCase = ({ data }) => {
   const tableHeaders = ["", "Step actions", "Expected Results", "Execution notes", "Execution status"]
@@ -7,7 +7,7 @@ export const TestCase = ({ data }) => {
   const tableData = { headers: tableHeaders, rows: tableRows };
 
   const getPreconditions = () => {
-    const basicsText =  <>The page must be opened in any browser <a href={CC_PAGE_LINK} target='_blank'>{CC_PAGE_LINK}</a>.</>;
+    const basicsText =  <>The page must be opened in any browser <a href={CC_PROJECT_LINK} target='_blank'>{CC_PROJECT_LINK}</a>.</>;
 
     switch (preconditions) {
       case 'basics':
