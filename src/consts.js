@@ -1,0 +1,1 @@
+export const CC_PAGE_LINK = 'https://radekjelen.github.io/currency-converter-React/';
