@@ -1,4 +1,4 @@
-# Tests Projects - QA Manual Testing 🔍
+# Tests For Projects - QA Manual Testing 🔍
 
 <p align="justify"> This is my personal tester project where I want to post the test collections I have created. I will post here application specifications, test plans, manual test results and final reports created. I'm basing this on applications I've created myself. The project aims to show my skills in manual testing, learning through experience and continuously improving my skills. </p>
 
